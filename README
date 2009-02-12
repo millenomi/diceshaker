@@ -1,6 +1,6 @@
 Welcome to Diceshaker.
 
-Since version 2.1, Diceshaker is built by the new "Multiverse" ∞labs build infrastructure. This infrastructure is common and not replicated between projects. In the future, it will be a Git submodule, but for now you must clone it yourself; in both cases, you must set up your Xcode preferences or specify the path manually as a build setting for Diceshaker to build.
+Diceshaker is built by the new "Multiverse" ∞labs build infrastructure. This infrastructure is common and not replicated between projects. In the future, it will be a Git submodule, but for now you must clone it yourself; in both cases, you must set up your Xcode preferences or specify the path manually as a build setting for Diceshaker to build.
 
 That is, you MUST first check out the repository at
 	http://github.com/millenomi/infinitelabs-build-tools
