@@ -8,7 +8,7 @@ and set your system up to find these files during the build as the INFINITELABS_
 
 To build Diceshaker without errors:
 
- - from the command line, set the INFINITELABS_TOOLS build setting to the full path to the Tools directory you checked out. For example, if you have checked out the repository in /Projects/Diceshaker and the tools in /Projects/InfiniteLabsTools, the following will build Afloat correctly:
+ - from the command line, set the INFINITELABS_TOOLS build setting to the full path to the Tools directory you checked out. For example, if you have checked out the repository in /Projects/Diceshaker and the tools in /Projects/InfiniteLabsTools, the following will build Diceshaker correctly:
 
 	cd /Projects/Diceshaker
 	xcodebuild -configuration -sdk iphonesimulator2.2 -Debug clean build INFINITELABS_TOOLS=/Projects/InfiniteLabsTools
