@@ -1,0 +1,16 @@
+//
+//  Diceshaker.xcconfig
+//  Diceshaker
+//
+//  Created by ∞ on 24/08/08.
+//  Copyright 2008 Emanuele Vulcano. All rights reserved.
+//
+
+USER_VISIBLE_VERSION = 1.0.3
+VERSION = 3.0
+
+BASE_BUILD_FOLDER = $(SRCROOT)
+
+SYMROOT = $(BASE_BUILD_FOLDER)/Build
+OBJROOT = $(BASE_BUILD_FOLDER)/TemporaryItems
+

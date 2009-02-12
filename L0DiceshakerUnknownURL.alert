@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>L0AlertButtons</key>
+	<array>
+		<string>App Store</string>
+		<string>Dismiss</string>
+	</array>
+	<key>L0AlertInformativeText</key>
+	<string>Maybe a newer version of Diceshaker can understand the command. Try looking in App Store for an update.</string>
+	<key>L0AlertMessage</key>
+	<string>The link used to open this application doesn't have a command Diceshaker understands.</string>
+	<key>L0AlertShowsSuppressionButton</key>
+	<false/>
+</dict>
+</plist>

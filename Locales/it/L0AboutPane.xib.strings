@@ -1,0 +1,21 @@
+
+/* Class = "IBUILabel"; text = "Diceshaker"; ObjectID = "13"; */
+"13.text" = "Diceshaker";
+
+/* Class = "IBUILabel"; text = "version %@\n© Emanuele Vulcano, 2008. All rights reserved."; ObjectID = "14"; */
+"14.text" = "versione %@\n© Emanuele Vulcano, 2008. Tutti i diritti riservati.";
+
+/* Class = "IBUILabel"; text = "Sound & Vibration"; ObjectID = "19"; */
+"19.text" = "Suono e vibrazione";
+
+/* Class = "IBUIButton"; disabledTitle = "Erase Rolls History"; ObjectID = "25"; */
+"25.disabledTitle" = "Cancella cronologia dei tiri";
+
+/* Class = "IBUIButton"; highlightedTitle = "Erase Rolls History"; ObjectID = "25"; */
+"25.highlightedTitle" = "Cancella cronologia dei tiri";
+
+/* Class = "IBUIButton"; normalTitle = "Erase Rolls History"; ObjectID = "25"; */
+"25.normalTitle" = "Cancella cronologia dei tiri";
+
+/* Class = "IBUIButton"; selectedTitle = "Erase Rolls History"; ObjectID = "25"; */
+"25.selectedTitle" = "Cancella cronologia dei tiri";

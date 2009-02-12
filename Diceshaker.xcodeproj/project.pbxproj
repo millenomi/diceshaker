@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		154232580E6F3BA800335D5C /* Update Localizations */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1542325D0E6F3BC700335D5C /* Build configuration list for PBXAggregateTarget "Update Localizations" */;
+			buildPhases = (
+				154232570E6F3BA800335D5C /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Update Localizations";
+			productName = "Update Localizations";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		150009CC0E47372A0064D928 /* Dice.png in Resources */ = {isa = PBXBuildFile; fileRef = 150009CB0E47372A0064D928 /* Dice.png */; };
+		150009F60E47411A0064D928 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 150009F50E47411A0064D928 /* CoreGraphics.framework */; };
+		15000B010E474A140064D928 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15000B000E474A140064D928 /* QuartzCore.framework */; };
+		15000B2B0E474C120064D928 /* L0AboutPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 15000B2A0E474C120064D928 /* L0AboutPane.m */; };
+		152D5ED20F44542100FDAA05 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 152D5EC90F44542100FDAA05 /* it.lproj */; };
+		152E43080E4780670034168E /* L0AboutPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 152E43060E4780670034168E /* L0AboutPane.xib */; };
+		152E43180E4781050034168E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 152E43160E4781050034168E /* Localizable.strings */; };
+		1544B7960EA7C59700695980 /* UIAlertView+L0Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544B7940EA7C59700695980 /* UIAlertView+L0Alert.m */; };
+		1544B7CE0EA7CC4B00695980 /* L0DiceshakerFirstNag.alert in Resources */ = {isa = PBXBuildFile; fileRef = 1544B7CC0EA7CC4B00695980 /* L0DiceshakerFirstNag.alert */; };
+		1544B7CF0EA7CC4B00695980 /* L0DiceshakerLastNag.alert in Resources */ = {isa = PBXBuildFile; fileRef = 1544B7CD0EA7CC4B00695980 /* L0DiceshakerLastNag.alert */; };
+		1546C52A0E47148300B3EF0C /* L0Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546C5290E47148300B3EF0C /* L0Dice.m */; };
+		154EBFAB0F4377B0002194B6 /* NSURL_L0URLParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBFAA0F4377B0002194B6 /* NSURL_L0URLParsing.m */; };
+		1555A8B40EDF5A5C009EC3F5 /* L0DiceshakerNagDisabled.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1555A8AE0EDF5A5C009EC3F5 /* L0DiceshakerNagDisabled.strings */; };
+		1555A8B50EDF5A5C009EC3F5 /* L0DiceshakerLastNag.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1555A8B00EDF5A5C009EC3F5 /* L0DiceshakerLastNag.strings */; };
+		1555A8B60EDF5A5C009EC3F5 /* L0DiceshakerFirstNag.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1555A8B20EDF5A5C009EC3F5 /* L0DiceshakerFirstNag.strings */; };
+		1555A8E10EDF5D95009EC3F5 /* L0DiceshakerNagDisabled.alert in Resources */ = {isa = PBXBuildFile; fileRef = 1555A8E00EDF5D95009EC3F5 /* L0DiceshakerNagDisabled.alert */; };
+		1567FA9C0EDECB6200992081 /* L0DiceshakerNagTester.m in Sources */ = {isa = PBXBuildFile; fileRef = 1567FA9B0EDECB6200992081 /* L0DiceshakerNagTester.m */; };
+		158240340E477F8B00107A4B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158240330E477F8B00107A4B /* MainWindow.xib */; };
+		158240390E477FED00107A4B /* L0DiceRollerPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546C52F0E47164300B3EF0C /* L0DiceRollerPane.m */; };
+		1585A1950E47A21B00D2015B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1585A1940E47A21B00D2015B /* Default.png */; };
+		15A3E6810EDFD75B0074434F /* L0DiceshakerUnknownURL.alert in Resources */ = {isa = PBXBuildFile; fileRef = 15A3E6800EDFD75B0074434F /* L0DiceshakerUnknownURL.alert */; };
+		15A3E6A10EDFD87B0074434F /* L0DiceshakerUnknownURL.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15A3E69F0EDFD87B0074434F /* L0DiceshakerUnknownURL.strings */; };
+		15ACF4050E4760D500A41681 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF4040E4760D500A41681 /* Icon.png */; };
+		15ACF40E0E4762A600A41681 /* Icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF40D0E4762A600A41681 /* Icon512.png */; };
+		15ACF4320E4764B300A41681 /* inflabs.png in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF4310E4764B300A41681 /* inflabs.png */; };
+		15ACF43A0E47653F00A41681 /* inflabs_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF4390E47653F00A41681 /* inflabs_dark.png */; };
+		15ACF4400E47691A00A41681 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15ACF43F0E47691A00A41681 /* CoreAudio.framework */; };
+		15ACF4470E47695000A41681 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15ACF4460E47695000A41681 /* AudioToolbox.framework */; };
+		15ACF45D0E476B3100A41681 /* roll.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF45C0E476B3100A41681 /* roll.aiff */; };
+		1D3623260D0F684500981E51 /* DiceshakerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* DiceshakerAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		154232610E6F3EB200335D5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 154232580E6F3BA800335D5C;
+			remoteInfo = "Update Localizations";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		150009CB0E47372A0064D928 /* Dice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dice.png; sourceTree = "<group>"; };
+		150009F50E47411A0064D928 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		15000B000E474A140064D928 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		15000B290E474C120064D928 /* L0AboutPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L0AboutPane.h; sourceTree = "<group>"; };
+		15000B2A0E474C120064D928 /* L0AboutPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L0AboutPane.m; sourceTree = "<group>"; };
+		152D5EC90F44542100FDAA05 /* it.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = it.lproj; path = "Compiled Locales/it.lproj"; sourceTree = "<group>"; };
+		152E43070E4780670034168E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/L0AboutPane.xib; sourceTree = "<group>"; };
+		152E43170E4781050034168E /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		1544B7940EA7C59700695980 /* UIAlertView+L0Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+L0Alert.m"; sourceTree = "<group>"; };
+		1544B7950EA7C59700695980 /* UIAlertView+L0Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+L0Alert.h"; sourceTree = "<group>"; };
+		1544B7CC0EA7CC4B00695980 /* L0DiceshakerFirstNag.alert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = L0DiceshakerFirstNag.alert; sourceTree = "<group>"; };
+		1544B7CD0EA7CC4B00695980 /* L0DiceshakerLastNag.alert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = L0DiceshakerLastNag.alert; sourceTree = "<group>"; };
+		1546C5280E47148300B3EF0C /* L0Dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L0Dice.h; sourceTree = "<group>"; };
+		1546C5290E47148300B3EF0C /* L0Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L0Dice.m; sourceTree = "<group>"; };
+		1546C52E0E47164300B3EF0C /* L0DiceRollerPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L0DiceRollerPane.h; sourceTree = "<group>"; };
+		1546C52F0E47164300B3EF0C /* L0DiceRollerPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L0DiceRollerPane.m; sourceTree = "<group>"; };
+		154EBFA90F4377B0002194B6 /* NSURL_L0URLParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURL_L0URLParsing.h; sourceTree = "<group>"; };
+		154EBFAA0F4377B0002194B6 /* NSURL_L0URLParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURL_L0URLParsing.m; sourceTree = "<group>"; };
+		1555A8AF0EDF5A5C009EC3F5 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/L0DiceshakerNagDisabled.strings; sourceTree = "<group>"; };
+		1555A8B10EDF5A5C009EC3F5 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/L0DiceshakerLastNag.strings; sourceTree = "<group>"; };
+		1555A8B30EDF5A5C009EC3F5 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/L0DiceshakerFirstNag.strings; sourceTree = "<group>"; };
+		1555A8E00EDF5D95009EC3F5 /* L0DiceshakerNagDisabled.alert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = L0DiceshakerNagDisabled.alert; sourceTree = "<group>"; };
+		1567FA9A0EDECB6200992081 /* L0DiceshakerNagTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L0DiceshakerNagTester.h; sourceTree = "<group>"; };
+		1567FA9B0EDECB6200992081 /* L0DiceshakerNagTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L0DiceshakerNagTester.m; sourceTree = "<group>"; };
+		1585A1940E47A21B00D2015B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		15A3E6570EDFD5740074434F /* Locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Locales; sourceTree = "<group>"; };
+		15A3E6800EDFD75B0074434F /* L0DiceshakerUnknownURL.alert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = L0DiceshakerUnknownURL.alert; sourceTree = "<group>"; };
+		15A3E6A00EDFD87B0074434F /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/L0DiceshakerUnknownURL.strings; sourceTree = "<group>"; };
+		15ACF4040E4760D500A41681 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		15ACF40D0E4762A600A41681 /* Icon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon512.png; sourceTree = "<group>"; };
+		15ACF4310E4764B300A41681 /* inflabs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inflabs.png; sourceTree = "<group>"; };
+		15ACF4390E47653F00A41681 /* inflabs_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inflabs_dark.png; sourceTree = "<group>"; };
+		15ACF43F0E47691A00A41681 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		15ACF4460E47695000A41681 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		15ACF45C0E476B3100A41681 /* roll.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = roll.aiff; sourceTree = "<group>"; };
+		15C858AB0E7856C8001156CB /* AdHoc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AdHoc.plist; sourceTree = "<group>"; };
+		15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Diceshaker.xcconfig; sourceTree = "<group>"; };
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* DiceshakerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiceshakerAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* DiceshakerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiceshakerAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Diceshaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diceshaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		28AD733E0D9D9553002E5188 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Diceshaker_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Diceshaker_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.info-plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				150009F60E47411A0064D928 /* CoreGraphics.framework in Frameworks */,
+				15000B010E474A140064D928 /* QuartzCore.framework in Frameworks */,
+				15ACF4400E47691A00A41681 /* CoreAudio.framework in Frameworks */,
+				15ACF4470E47695000A41681 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				154EBFA80F437791002194B6 /* Cross-app Communication */,
+				1544B7940EA7C59700695980 /* UIAlertView+L0Alert.m */,
+				1544B7950EA7C59700695980 /* UIAlertView+L0Alert.h */,
+				15000B290E474C120064D928 /* L0AboutPane.h */,
+				15000B2A0E474C120064D928 /* L0AboutPane.m */,
+				1546C52E0E47164300B3EF0C /* L0DiceRollerPane.h */,
+				1546C52F0E47164300B3EF0C /* L0DiceRollerPane.m */,
+				1D3623240D0F684500981E51 /* DiceshakerAppDelegate.h */,
+				1D3623250D0F684500981E51 /* DiceshakerAppDelegate.m */,
+				1546C5280E47148300B3EF0C /* L0Dice.h */,
+				1546C5290E47148300B3EF0C /* L0Dice.m */,
+				1567FA9A0EDECB6200992081 /* L0DiceshakerNagTester.h */,
+				1567FA9B0EDECB6200992081 /* L0DiceshakerNagTester.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		154EBFA80F437791002194B6 /* Cross-app Communication */ = {
+			isa = PBXGroup;
+			children = (
+				154EBFA90F4377B0002194B6 /* NSURL_L0URLParsing.h */,
+				154EBFAA0F4377B0002194B6 /* NSURL_L0URLParsing.m */,
+			);
+			name = "Cross-app Communication";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Diceshaker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				15C858AB0E7856C8001156CB /* AdHoc.plist */,
+				15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				15A3E6570EDFD5740074434F /* Locales */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+				150009F50E47411A0064D928 /* CoreGraphics.framework */,
+				15000B000E474A140064D928 /* QuartzCore.framework */,
+				15ACF43F0E47691A00A41681 /* CoreAudio.framework */,
+				15ACF4460E47695000A41681 /* AudioToolbox.framework */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* Diceshaker_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				152D5EC90F44542100FDAA05 /* it.lproj */,
+				15A3E6800EDFD75B0074434F /* L0DiceshakerUnknownURL.alert */,
+				1555A8E00EDF5D95009EC3F5 /* L0DiceshakerNagDisabled.alert */,
+				1544B7CC0EA7CC4B00695980 /* L0DiceshakerFirstNag.alert */,
+				1544B7CD0EA7CC4B00695980 /* L0DiceshakerLastNag.alert */,
+				1585A1940E47A21B00D2015B /* Default.png */,
+				15ACF4310E4764B300A41681 /* inflabs.png */,
+				15ACF45C0E476B3100A41681 /* roll.aiff */,
+				15ACF4390E47653F00A41681 /* inflabs_dark.png */,
+				15ACF40D0E4762A600A41681 /* Icon512.png */,
+				150009CB0E47372A0064D928 /* Dice.png */,
+				15ACF4040E4760D500A41681 /* Icon.png */,
+				152E43160E4781050034168E /* Localizable.strings */,
+				152E43060E4780670034168E /* L0AboutPane.xib */,
+				158240330E477F8B00107A4B /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				15A3E69F0EDFD87B0074434F /* L0DiceshakerUnknownURL.strings */,
+				1555A8AE0EDF5A5C009EC3F5 /* L0DiceshakerNagDisabled.strings */,
+				1555A8B00EDF5A5C009EC3F5 /* L0DiceshakerLastNag.strings */,
+				1555A8B20EDF5A5C009EC3F5 /* L0DiceshakerFirstNag.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Diceshaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Diceshaker" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				154232620E6F3EB200335D5C /* PBXTargetDependency */,
+			);
+			name = Diceshaker;
+			productName = Diceshaker;
+			productReference = 1D6058910D05DD3D006BFB54 /* Diceshaker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Diceshaker" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+				Italian,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Diceshaker */,
+				154232580E6F3BA800335D5C /* Update Localizations */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				158240340E477F8B00107A4B /* MainWindow.xib in Resources */,
+				150009CC0E47372A0064D928 /* Dice.png in Resources */,
+				15ACF4050E4760D500A41681 /* Icon.png in Resources */,
+				15ACF40E0E4762A600A41681 /* Icon512.png in Resources */,
+				15ACF4320E4764B300A41681 /* inflabs.png in Resources */,
+				15ACF43A0E47653F00A41681 /* inflabs_dark.png in Resources */,
+				15ACF45D0E476B3100A41681 /* roll.aiff in Resources */,
+				152E43080E4780670034168E /* L0AboutPane.xib in Resources */,
+				152E43180E4781050034168E /* Localizable.strings in Resources */,
+				1585A1950E47A21B00D2015B /* Default.png in Resources */,
+				1544B7CE0EA7CC4B00695980 /* L0DiceshakerFirstNag.alert in Resources */,
+				1544B7CF0EA7CC4B00695980 /* L0DiceshakerLastNag.alert in Resources */,
+				1555A8B40EDF5A5C009EC3F5 /* L0DiceshakerNagDisabled.strings in Resources */,
+				1555A8B50EDF5A5C009EC3F5 /* L0DiceshakerLastNag.strings in Resources */,
+				1555A8B60EDF5A5C009EC3F5 /* L0DiceshakerFirstNag.strings in Resources */,
+				1555A8E10EDF5D95009EC3F5 /* L0DiceshakerNagDisabled.alert in Resources */,
+				15A3E6810EDFD75B0074434F /* L0DiceshakerUnknownURL.alert in Resources */,
+				15A3E6A10EDFD87B0074434F /* L0DiceshakerUnknownURL.strings in Resources */,
+				152D5ED20F44542100FDAA05 /* it.lproj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		154232570E6F3BA800335D5C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$INFINITELABS_TOOLS\"/BuildLocale\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* DiceshakerAppDelegate.m in Sources */,
+				1546C52A0E47148300B3EF0C /* L0Dice.m in Sources */,
+				158240390E477FED00107A4B /* L0DiceRollerPane.m in Sources */,
+				15000B2B0E474C120064D928 /* L0AboutPane.m in Sources */,
+				1544B7960EA7C59700695980 /* UIAlertView+L0Alert.m in Sources */,
+				1567FA9C0EDECB6200992081 /* L0DiceshakerNagTester.m in Sources */,
+				154EBFAB0F4377B0002194B6 /* NSURL_L0URLParsing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		154232620E6F3EB200335D5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 154232580E6F3BA800335D5C /* Update Localizations */;
+			targetProxy = 154232610E6F3EB200335D5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		152E43060E4780670034168E /* L0AboutPane.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				152E43070E4780670034168E /* English */,
+			);
+			name = L0AboutPane.xib;
+			sourceTree = "<group>";
+		};
+		152E43160E4781050034168E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				152E43170E4781050034168E /* English */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		1555A8AE0EDF5A5C009EC3F5 /* L0DiceshakerNagDisabled.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1555A8AF0EDF5A5C009EC3F5 /* English */,
+			);
+			name = L0DiceshakerNagDisabled.strings;
+			sourceTree = "<group>";
+		};
+		1555A8B00EDF5A5C009EC3F5 /* L0DiceshakerLastNag.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1555A8B10EDF5A5C009EC3F5 /* English */,
+			);
+			name = L0DiceshakerLastNag.strings;
+			sourceTree = "<group>";
+		};
+		1555A8B20EDF5A5C009EC3F5 /* L0DiceshakerFirstNag.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1555A8B30EDF5A5C009EC3F5 /* English */,
+			);
+			name = L0DiceshakerFirstNag.strings;
+			sourceTree = "<group>";
+		};
+		158240330E477F8B00107A4B /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28AD733E0D9D9553002E5188 /* English */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		15A3E69F0EDFD87B0074434F /* L0DiceshakerUnknownURL.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				15A3E6A00EDFD87B0074434F /* English */,
+			);
+			name = L0DiceshakerUnknownURL.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		152E43F80E4783C20034168E /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBC_NOTICES = NO;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Distribution;
+		};
+		152E43F90E4783C20034168E /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 2.1;
+				PRODUCT_NAME = Diceshaker;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "99984C3B-E139-44B6-8A42-AD57C662B8B8";
+			};
+			name = Distribution;
+		};
+		154232590E6F3BA900335D5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Update Localizations";
+			};
+			name = Debug;
+		};
+		1542325A0E6F3BA900335D5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Update Localizations";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		1542325B0E6F3BA900335D5C /* Distribution */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Update Localizations";
+			};
+			name = Distribution;
+		};
+		15C8589C0E7855A4001156CB /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBC_NOTICES = NO;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = "Ad Hoc";
+		};
+		15C8589D0E7855A4001156CB /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/AdHoc.plist";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 2.1;
+				PRODUCT_NAME = Diceshaker;
+			};
+			name = "Ad Hoc";
+		};
+		15C8589E0E7855A4001156CB /* Ad Hoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "Update Localizations";
+			};
+			name = "Ad Hoc";
+		};
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 2.1;
+				PRODUCT_NAME = Diceshaker;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = DefaultProfileUuid;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
+				IBC_WARNINGS = NO;
+				INFOPLIST_FILE = Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 2.1;
+				PRODUCT_NAME = Diceshaker;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBC_NOTICES = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IBC_NOTICES = NO;
+				PREBINDING = NO;
+				SDKROOT = iphoneos2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1542325D0E6F3BC700335D5C /* Build configuration list for PBXAggregateTarget "Update Localizations" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				154232590E6F3BA900335D5C /* Debug */,
+				1542325A0E6F3BA900335D5C /* Release */,
+				1542325B0E6F3BA900335D5C /* Distribution */,
+				15C8589E0E7855A4001156CB /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Diceshaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+				152E43F90E4783C20034168E /* Distribution */,
+				15C8589D0E7855A4001156CB /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Diceshaker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+				152E43F80E4783C20034168E /* Distribution */,
+				15C8589C0E7855A4001156CB /* Ad Hoc */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

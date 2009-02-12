@@ -1,0 +1,36 @@
+
+/* Class = "IBUIViewController"; title = "Diceshaker"; ObjectID = "10"; */
+"10.title" = "Diceshaker";
+
+/* Class = "IBUILabel"; text = "59"; ObjectID = "21"; */
+"21.text" = "59";
+
+/* Class = "IBUINavigationItem"; title = "3d6"; ObjectID = "29"; */
+"29.title" = "3d6";
+
+/* Class = "IBUIBarButtonItem"; title = "Roll"; ObjectID = "31"; */
+"31.title" = "Tira";
+
+/* Class = "IBUILabel"; text = "Shake or touch \"Roll\" to roll."; ObjectID = "35"; */
+"35.text" = "Agita o tocca \"Tira\" per tirare.";
+
+/* Class = "IBUILabel"; text = "12 + 1 + 3 + 4 + 5 + 7 + 2 + 9 + 8 + 8"; ObjectID = "39"; */
+"39.text" = "12 + 1 + 3 + 4 + 5 + 7 + 2 + 9 + 8 + 8";
+
+/* Class = "IBUINavigationController"; title = "Diceshaker"; ObjectID = "43"; */
+"43.title" = "Diceshaker";
+
+/* Class = "IBUINavigationItem"; title = "Diceshaker"; ObjectID = "47"; */
+"47.title" = "Diceshaker";
+
+/* Class = "IBUIBarButtonItem"; title = "Donate"; ObjectID = "52"; */
+"52.title" = "Dona";
+
+/* Class = "IBUINavigationItem"; prompt = "Send your dice roll to “%@”"; ObjectID = "58"; */
+"58.prompt" = "Invia il lancio a “%@”";
+
+/* Class = "IBUINavigationItem"; title = "Diceshaker"; ObjectID = "58"; */
+"58.title" = "Diceshaker";
+
+/* Class = "IBUIBarButtonItem"; title = "Send"; ObjectID = "64"; */
+"64.title" = "Invia";

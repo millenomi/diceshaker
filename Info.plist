@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>L0DiceshakerDonationsURL</key>
+	<string>http://infinite-labs.net/diceshaker/donate/</string>
+	<key>L0DiceshakerAppStoreURL</key>
+	<string>http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=287322475&amp;mt=8</string>
+	<key>L0DiceshakerMotto</key>
+	<string>Per aspera ad astra</string>
+	<key>CFBundleShortVersionString</key>
+	<string>${USER_VISIBLE_VERSION}</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundleExecutable</key>
+	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleIconFile</key>
+	<string>Icon.png</string>
+	<key>CFBundleIdentifier</key>
+	<string>net.infinitelabs.Diceshaker</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>public.diceroll</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>x-service-public.diceroll</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>net.infinite-labs.Diceshaker.ControlURL</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>x-infinitelabs-diceshaker</string>
+			</array>
+		</dict>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>${VERSION}</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>NSMainNibFile</key>
+	<string>MainWindow</string>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleBlackOpaque</string>
+</dict>
+</plist>
