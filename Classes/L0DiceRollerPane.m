@@ -52,6 +52,8 @@
 	
 	bottomBar.touchTarget = self;
 	bottomBar.touchAction = @selector(toggleDicePicker);
+	
+	historyTable.tableHeaderView = infoButtonHeaderView;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
@@ -63,6 +65,7 @@
 	[container release];
 	[historyTable release];
 	[resultLabel release];
+	[infoButtonHeaderView release];
 	
 	[controller removeObserver:self forKeyPath:@"currentRoll"];
 	
