@@ -32,6 +32,15 @@
 		1544B7CE0EA7CC4B00695980 /* L0DiceshakerFirstNag.alert in Resources */ = {isa = PBXBuildFile; fileRef = 1544B7CC0EA7CC4B00695980 /* L0DiceshakerFirstNag.alert */; };
 		1544B7CF0EA7CC4B00695980 /* L0DiceshakerLastNag.alert in Resources */ = {isa = PBXBuildFile; fileRef = 1544B7CD0EA7CC4B00695980 /* L0DiceshakerLastNag.alert */; };
 		1546C52A0E47148300B3EF0C /* L0Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546C5290E47148300B3EF0C /* L0Dice.m */; };
+		154E19660F45F0DB00E95292 /* d100.png in Resources */ = {isa = PBXBuildFile; fileRef = 154E195D0F45F0DB00E95292 /* d100.png */; };
+		154E19670F45F0DB00E95292 /* d10.png in Resources */ = {isa = PBXBuildFile; fileRef = 154E195E0F45F0DB00E95292 /* d10.png */; };
+		154E19680F45F0DB00E95292 /* d8.png in Resources */ = {isa = PBXBuildFile; fileRef = 154E195F0F45F0DB00E95292 /* d8.png */; };
+		154E19690F45F0DB00E95292 /* d6.png in Resources */ = {isa = PBXBuildFile; fileRef = 154E19600F45F0DB00E95292 /* d6.png */; };
+		154E196A0F45F0DB00E95292 /* d4.png in Resources */ = {isa = PBXBuildFile; fileRef = 154E19610F45F0DB00E95292 /* d4.png */; };
+		154E196B0F45F0DB00E95292 /* d2.png in Resources */ = {isa = PBXBuildFile; fileRef = 154E19620F45F0DB00E95292 /* d2.png */; };
+		154E196C0F45F0DB00E95292 /* d3.png in Resources */ = {isa = PBXBuildFile; fileRef = 154E19630F45F0DB00E95292 /* d3.png */; };
+		154E196D0F45F0DB00E95292 /* d20.png in Resources */ = {isa = PBXBuildFile; fileRef = 154E19640F45F0DB00E95292 /* d20.png */; };
+		154E196E0F45F0DB00E95292 /* d12.png in Resources */ = {isa = PBXBuildFile; fileRef = 154E19650F45F0DB00E95292 /* d12.png */; };
 		154EBFAB0F4377B0002194B6 /* NSURL_L0URLParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = 154EBFAA0F4377B0002194B6 /* NSURL_L0URLParsing.m */; };
 		1555A8B40EDF5A5C009EC3F5 /* L0DiceshakerNagDisabled.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1555A8AE0EDF5A5C009EC3F5 /* L0DiceshakerNagDisabled.strings */; };
 		1555A8B50EDF5A5C009EC3F5 /* L0DiceshakerLastNag.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1555A8B00EDF5A5C009EC3F5 /* L0DiceshakerLastNag.strings */; };
@@ -84,6 +93,15 @@
 		1546C5290E47148300B3EF0C /* L0Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L0Dice.m; sourceTree = "<group>"; };
 		1546C52E0E47164300B3EF0C /* L0DiceRollerPane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L0DiceRollerPane.h; sourceTree = "<group>"; };
 		1546C52F0E47164300B3EF0C /* L0DiceRollerPane.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L0DiceRollerPane.m; sourceTree = "<group>"; };
+		154E195D0F45F0DB00E95292 /* d100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d100.png; sourceTree = "<group>"; };
+		154E195E0F45F0DB00E95292 /* d10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d10.png; sourceTree = "<group>"; };
+		154E195F0F45F0DB00E95292 /* d8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d8.png; sourceTree = "<group>"; };
+		154E19600F45F0DB00E95292 /* d6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d6.png; sourceTree = "<group>"; };
+		154E19610F45F0DB00E95292 /* d4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d4.png; sourceTree = "<group>"; };
+		154E19620F45F0DB00E95292 /* d2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d2.png; sourceTree = "<group>"; };
+		154E19630F45F0DB00E95292 /* d3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d3.png; sourceTree = "<group>"; };
+		154E19640F45F0DB00E95292 /* d20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d20.png; sourceTree = "<group>"; };
+		154E19650F45F0DB00E95292 /* d12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = d12.png; sourceTree = "<group>"; };
 		154EBFA90F4377B0002194B6 /* NSURL_L0URLParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSURL_L0URLParsing.h; sourceTree = "<group>"; };
 		154EBFAA0F4377B0002194B6 /* NSURL_L0URLParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSURL_L0URLParsing.m; sourceTree = "<group>"; };
 		1555A8AF0EDF5A5C009EC3F5 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/L0DiceshakerNagDisabled.strings; sourceTree = "<group>"; };
@@ -157,6 +175,22 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		154E19700F45F0DF00E95292 /* Dice Images */ = {
+			isa = PBXGroup;
+			children = (
+				154E195D0F45F0DB00E95292 /* d100.png */,
+				154E195E0F45F0DB00E95292 /* d10.png */,
+				154E195F0F45F0DB00E95292 /* d8.png */,
+				154E19600F45F0DB00E95292 /* d6.png */,
+				154E19610F45F0DB00E95292 /* d4.png */,
+				154E19620F45F0DB00E95292 /* d2.png */,
+				154E19630F45F0DB00E95292 /* d3.png */,
+				154E19640F45F0DB00E95292 /* d20.png */,
+				154E19650F45F0DB00E95292 /* d12.png */,
+			);
+			name = "Dice Images";
+			sourceTree = "<group>";
+		};
 		154EBFA80F437791002194B6 /* Cross-app Communication */ = {
 			isa = PBXGroup;
 			children = (
@@ -205,6 +239,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				154E19700F45F0DF00E95292 /* Dice Images */,
 				152D5EC90F44542100FDAA05 /* it.lproj */,
 				15A3E6800EDFD75B0074434F /* L0DiceshakerUnknownURL.alert */,
 				1555A8E00EDF5D95009EC3F5 /* L0DiceshakerNagDisabled.alert */,
@@ -308,6 +343,15 @@
 				15A3E6810EDFD75B0074434F /* L0DiceshakerUnknownURL.alert in Resources */,
 				15A3E6A10EDFD87B0074434F /* L0DiceshakerUnknownURL.strings in Resources */,
 				152D5ED20F44542100FDAA05 /* it.lproj in Resources */,
+				154E19660F45F0DB00E95292 /* d100.png in Resources */,
+				154E19670F45F0DB00E95292 /* d10.png in Resources */,
+				154E19680F45F0DB00E95292 /* d8.png in Resources */,
+				154E19690F45F0DB00E95292 /* d6.png in Resources */,
+				154E196A0F45F0DB00E95292 /* d4.png in Resources */,
+				154E196B0F45F0DB00E95292 /* d2.png in Resources */,
+				154E196C0F45F0DB00E95292 /* d3.png in Resources */,
+				154E196D0F45F0DB00E95292 /* d20.png in Resources */,
+				154E196E0F45F0DB00E95292 /* d12.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -33,7 +33,6 @@
 			 [NSNumber numberWithInt:10],
 			 [NSNumber numberWithInt:12],
 			 [NSNumber numberWithInt:20],
-			 [NSNumber numberWithInt:30],
 			 [NSNumber numberWithInt:100],
 			 nil];
 	
@@ -148,19 +147,75 @@
 		return 0;
 }
 
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+//- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+//	
+//	switch (component) {
+//		case 0:
+//			return [NSString stringWithFormat:@"%d", row + 1];
+//
+//		case 1:
+//			return nil;
+//			
+//		default:
+//			return nil;
+//	}
+//	
+//}
+
+- (UIView*) pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView*) view {
 	
 	switch (component) {
-		case 0:
-			return [NSString stringWithFormat:@"%d", row + 1];
-
-		case 1:
-			return [NSString stringWithFormat:@"d%@", [sides objectAtIndex:row]];
+		case 0: {
+			UILabel* label = [view isKindOfClass:[UILabel class]]? (UILabel*) view : nil;
+			if (!label) {
+				label = [[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 40, 40)] autorelease];
+				label.textAlignment = UITextAlignmentCenter;
+				label.opaque = NO;
+				label.backgroundColor = [UIColor clearColor];
+				label.font = [UIFont boldSystemFontOfSize:22];
+			}
+			
+			label.text = [NSString stringWithFormat:@"%d", row + 1];
+			return label;
+		}
+			
+		case 1: {
+			UIImageView* imageView = [view isKindOfClass:[UIImageView class]]? (UIImageView*) view : nil;
+			if (!imageView)
+				imageView = [[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 180, 180)] autorelease];
+			
+			NSNumber* num = [sides objectAtIndex:row];
+			NSString* imgName = [NSString stringWithFormat:@"d%@.png", num];
+			
+			UIImage* img = [UIImage imageNamed:imgName];
+			imageView.image = img;
+			
+			return imageView;
+		}
 			
 		default:
 			return nil;
 	}
-	
+}
+
+- (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component {
+	if (component == 0)
+		return 44;
+	else
+		return 200;
+}
+
+- (CGFloat) pickerView:(UIPickerView*) pickerView rowHeightForComponent:(NSInteger) component {
+	switch (component) {
+		case 0:
+			return 44;
+
+		case 1:
+			return 180;
+			
+		default:
+			return 0;
+	}
 }
 
 - (void) observeValueForKeyPath:(NSString*) keyPath ofObject:(id) object change:(NSDictionary*)change context:(void*) context {
@@ -211,8 +266,12 @@
 
 - (void) selectCurrentDice:(BOOL) ani {
 	L0Dice* roll = controller.currentDice;
+	NSUInteger diceRow = [sides indexOfObject:[NSNumber numberWithInteger:roll.numberOfFacesPerDie]];
+	if (diceRow == NSNotFound)
+		return;
+	
 	[dicePicker selectRow:roll.numberOfDice - 1 inComponent:0 animated:ani];
-	[dicePicker selectRow:[sides indexOfObject:[NSNumber numberWithInteger:roll.numberOfFacesPerDie]] inComponent:1 animated:!dicePickerHidden];
+	[dicePicker selectRow:diceRow inComponent:1 animated:!dicePickerHidden];
 }
 
 - (void) pickerView:(UIPickerView*) pickerView didSelectRow:(NSInteger) row inComponent:(NSInteger) component {
@@ -225,13 +284,6 @@
 		d.numberOfFacesPerDie = [[sides objectAtIndex:row] intValue];
 	
 	controller.currentDice = d;
-}
-
-- (CGFloat)pickerView:(UIPickerView *)pickerView widthForComponent:(NSInteger)component {
-	if (component == 0)
-		return 44;
-	else
-		return 70;
 }
 
 - (NSInteger)tableView:(UITableView *)table numberOfRowsInSection:(NSInteger)section {

@@ -10,7 +10,7 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="66"/>
 			<integer value="47"/>
-			<integer value="14"/>
+			<integer value="12"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -77,7 +77,6 @@
 									<bool key="IBUIOpaque">NO</bool>
 									<bool key="IBUIClipsSubviews">YES</bool>
 									<bool key="IBUIMultipleTouchEnabled">YES</bool>
-									<bool key="IBUIShowsSelectionIndicator">YES</bool>
 								</object>
 								<object class="IBUIView" id="787578241">
 									<reference key="NSNextResponder" ref="798368742"/>
