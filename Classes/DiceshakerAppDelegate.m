@@ -186,6 +186,9 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 	self.mainController = nil;
 	self.lastAcceleration = nil;
 	self.navigationController = nil;
+	self.currentDice = nil;
+	self.backSideController = nil;
+	
 	[super dealloc];
 }
 
