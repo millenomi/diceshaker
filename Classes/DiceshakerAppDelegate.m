@@ -218,7 +218,7 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 	[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromRight forView:window cache:NO];
 	[UIView setAnimationDuration:0.7];
 	
-	[self.mainController.view removeFromSuperview];
+	[self.navigationController.view removeFromSuperview];
 	[window addSubview:self.backSideController.view];
 	
 	[UIView commitAnimations];
@@ -234,7 +234,7 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 	flippingBack = YES;
 	[self performSelector:@selector(_resetFlipBack) withObject:nil afterDelay:0.5];
 	[self.backSideController.view removeFromSuperview];
-	[window addSubview:self.mainController.view];
+	[window addSubview:self.navigationController.view];
 	
 	[UIView commitAnimations];
 }

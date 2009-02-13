@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "DiceshakerAppDelegate.h"
 
+@class L0DraggableNavigationBar;
+
 @interface L0DiceRollerPane : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource, UITableViewDataSource, UITableViewDelegate> {
 	IBOutlet UIPickerView* dicePicker;
 	IBOutlet UIView* container;
@@ -16,7 +18,7 @@
 	IBOutlet UILabel* resultLabel;
 	IBOutlet UILabel* eachDieLabel;
 	
-	IBOutlet UINavigationBar* bottomBar;
+	IBOutlet L0DraggableNavigationBar* bottomBar;
 	IBOutlet DiceshakerAppDelegate* controller; // TODO @property(assign)
 	
 	BOOL dicePickerHidden;

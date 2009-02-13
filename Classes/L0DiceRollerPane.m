@@ -9,6 +9,8 @@
 #import "L0DiceRollerPane.h"
 #import "DiceshakerAppDelegate.h"
 #import "L0Dice.h"
+#import "L0DraggableNavigationBar.h"
+
 #import <CoreGraphics/CoreGraphics.h>
 #import <QuartzCore/QuartzCore.h>
 
@@ -20,12 +22,6 @@
 
 
 @implementation L0DiceRollerPane
-
-/*
- Implement loadView if you want to create a view hierarchy programmatically
-- (void)loadView {
-}
- */
 
 - (void) viewDidLoad {
 	sides = [[NSArray alloc] initWithObjects:
@@ -53,19 +49,14 @@
 	historyTable.separatorColor = [UIColor colorWithWhite:0.25 alpha:1.0];
 	
 	dicePickerHidden = [[NSUserDefaults standardUserDefaults] boolForKey:kL0DiceshakerDrawerHiddenDefault];
+	
+	bottomBar.touchTarget = self;
+	bottomBar.touchAction = @selector(toggleDicePicker);
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	// Return YES for supported orientations
 	return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
-
-- (void)didReceiveMemoryWarning {
-	[super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
-	// Release anything that's not essential, such as cached data
-}
-
 
 - (void)dealloc {
 	[dicePicker release];

@@ -41,6 +41,7 @@
 		158240340E477F8B00107A4B /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 158240330E477F8B00107A4B /* MainWindow.xib */; };
 		158240390E477FED00107A4B /* L0DiceRollerPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546C52F0E47164300B3EF0C /* L0DiceRollerPane.m */; };
 		1585A1950E47A21B00D2015B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1585A1940E47A21B00D2015B /* Default.png */; };
+		15934EC50F4589AC00EFADD4 /* L0DraggableNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 15934EC40F4589AC00EFADD4 /* L0DraggableNavigationBar.m */; };
 		15A3E6810EDFD75B0074434F /* L0DiceshakerUnknownURL.alert in Resources */ = {isa = PBXBuildFile; fileRef = 15A3E6800EDFD75B0074434F /* L0DiceshakerUnknownURL.alert */; };
 		15A3E6A10EDFD87B0074434F /* L0DiceshakerUnknownURL.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15A3E69F0EDFD87B0074434F /* L0DiceshakerUnknownURL.strings */; };
 		15ACF4050E4760D500A41681 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF4040E4760D500A41681 /* Icon.png */; };
@@ -92,6 +93,8 @@
 		1567FA9A0EDECB6200992081 /* L0DiceshakerNagTester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L0DiceshakerNagTester.h; sourceTree = "<group>"; };
 		1567FA9B0EDECB6200992081 /* L0DiceshakerNagTester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L0DiceshakerNagTester.m; sourceTree = "<group>"; };
 		1585A1940E47A21B00D2015B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		15934EC30F4589AC00EFADD4 /* L0DraggableNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L0DraggableNavigationBar.h; sourceTree = "<group>"; };
+		15934EC40F4589AC00EFADD4 /* L0DraggableNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L0DraggableNavigationBar.m; sourceTree = "<group>"; };
 		15A3E6570EDFD5740074434F /* Locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Locales; sourceTree = "<group>"; };
 		15A3E6800EDFD75B0074434F /* L0DiceshakerUnknownURL.alert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = L0DiceshakerUnknownURL.alert; sourceTree = "<group>"; };
 		15A3E6A00EDFD87B0074434F /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/L0DiceshakerUnknownURL.strings; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				1546C5290E47148300B3EF0C /* L0Dice.m */,
 				1567FA9A0EDECB6200992081 /* L0DiceshakerNagTester.h */,
 				1567FA9B0EDECB6200992081 /* L0DiceshakerNagTester.m */,
+				15934EC30F4589AC00EFADD4 /* L0DraggableNavigationBar.h */,
+				15934EC40F4589AC00EFADD4 /* L0DraggableNavigationBar.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 				1544B7960EA7C59700695980 /* UIAlertView+L0Alert.m in Sources */,
 				1567FA9C0EDECB6200992081 /* L0DiceshakerNagTester.m in Sources */,
 				154EBFAB0F4377B0002194B6 /* NSURL_L0URLParsing.m in Sources */,
+				15934EC50F4589AC00EFADD4 /* L0DraggableNavigationBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
