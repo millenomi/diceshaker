@@ -464,14 +464,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBC_NOTICES = NO;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
 			};
 			name = Distribution;
 		};
@@ -484,7 +482,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 2.1;
 				PRODUCT_NAME = Diceshaker;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "99984C3B-E139-44B6-8A42-AD57C662B8B8";
 			};
@@ -522,14 +519,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBC_NOTICES = NO;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
 			};
 			name = "Ad Hoc";
 		};
@@ -543,7 +538,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 2.1;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = "Ad Hoc";
@@ -566,7 +560,6 @@
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 2.1;
 				PRODUCT_NAME = Diceshaker;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = DefaultProfileUuid;
 			};
@@ -581,7 +574,6 @@
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				IBC_WARNINGS = NO;
 				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 2.1;
 				PRODUCT_NAME = Diceshaker;
 			};
 			name = Release;
@@ -590,7 +582,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -598,7 +589,6 @@
 				IBC_NOTICES = NO;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
 			};
 			name = Debug;
 		};
@@ -606,14 +596,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IBC_NOTICES = NO;
 				PREBINDING = NO;
-				SDKROOT = iphoneos2.0;
 			};
 			name = Release;
 		};
