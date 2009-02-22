@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<ListView
+	android:id="@+id/historyList"  
+    android:layout_width="75px" 
+    android:layout_height="fill_parent" 
+    />
+    
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+    
+    <LinearLayout
+    	android:orientation="vertical"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    android:layout_marginLeft="5px" android:layout_marginRight="5px">
+    	
+    <TextView android:layout_height="wrap_content" android:text="Shake or choose Roll to roll." android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:gravity="center_horizontal" android:paddingTop="15px"></TextView>
+<TextView android:layout_height="wrap_content" android:id="@+id/rollTotalLabel" android:text="2489" android:layout_width="fill_parent" android:gravity="center_horizontal" android:textSize="40px" android:layout_marginTop="20px"></TextView>
+<TextView android:layout_height="wrap_content" android:text="2 + 1 + 3 + 5 + 9 + 2 + 4 + 7 + 8 + 3 + 2 + 1 + 3 + 5 + 9 + 2 + 4 + 7 + 8 + 3 + 2 + 1 + 3 + 5 + 9 + 2 + 4 + 7 + 8 + 3 + 2 + 1 + 3 + 5 + 9 + 2 + 4 + 7 + 8 + 3" android:layout_width="fill_parent" android:gravity="center" android:layout_marginLeft="10px" android:layout_marginRight="10px" android:id="@+id/rollResultsLabel" android:minLines="5"></TextView>
+</LinearLayout>
+
+<RelativeLayout android:layout_width="fill_parent" android:layout_alignParentBottom="true" android:gravity="center" android:baselineAligned="true" android:orientation="vertical" android:layout_marginRight="10px" android:layout_marginLeft="10px" android:layout_height="55px">
+	
+	<Button android:id="@+id/rollButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Roll" android:layout_alignParentRight="true" android:layout_centerVertical="true"></Button>
+<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/dicePickerButton" android:text="3d6" android:textStyle="bold" android:textSize="30px" android:layout_centerHorizontal="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true"></Button>
+</RelativeLayout>
+
+</RelativeLayout>
+</LinearLayout>

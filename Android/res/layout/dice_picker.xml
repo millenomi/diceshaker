@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:padding="10px">
+    
+<LinearLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:baselineAligned="true" android:gravity="center_vertical|center_horizontal">
+
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center">    
+	<Button android:id="@+id/addDieButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" android:textSize="30px"></Button>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">    
+	<EditText android:id="@+id/diceNumberField" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:gravity="center"></EditText>
+	<Spinner android:id="@+id/diceFacesSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>
+</LinearLayout>
+	<Button android:id="@+id/removeDieButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="30px" android:text="-"></Button>
+</LinearLayout>
+
+
+<RelativeLayout
+	android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="20px"
+    >
+	
+	<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dismiss" android:id="@+id/dismissDicePickerButton" android:layout_alignParentLeft="true"></Button>
+	<Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/dismissDicePickerAndRollButton" android:layout_alignParentRight="true" android:text="Roll"></Button>
+</RelativeLayout>
+
+</LinearLayout>
+
+
+</LinearLayout>

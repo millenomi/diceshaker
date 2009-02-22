@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<project name="Diceshaker" default="compile">
+	<property name="jar-name" value="Diceshaker.jar"/>
+	<property name="outdir" value="bin"/>
+	<property name="outdir-classes" value="${outdir}/classes"/>
+	
+	<property name="external-libs" value="libs"/>
+	
+	<target name="dirs">
+      <echo>Creating output directories if needed...</echo>
+      <mkdir dir="${outdir}" />
+      <mkdir dir="${outdir-classes}" />
+      <mkdir dir="${external-libs}" />
+  </target>
+
+	<target name="compile" depends="dirs">
+		<javac encoding="ascii" target="1.5" debug="true" extdirs="" srcdir="./src" destdir="${outdir-classes}">
+			<classpath>
+				<fileset dir="${external-libs}" includes="*.jar"/>
+			</classpath>
+		</javac>
+	</target>
+	
+	<target name="jar" depends="compile">
+		<jar basedir="${outdir-classes}" destfile="${outdir}/${jar-name}"/>
+	</target>
+	
+</project>
