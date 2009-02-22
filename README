@@ -25,9 +25,10 @@ The project references an iPhone development and distribution certificate that y
 
 The Android version of Diceshaker is developed with Eclipse and can be built with Ant. Building with Ant is as simple as:
 
+	export ANDROID_SDK="/path/to/android/sdk"
 	ant
 	
-in the Android directory. The Ant build file already knows of the dependencies it has to build (which reside in the Java5 directory).
+in the Android directory. The Ant build file already knows of the dependencies it has to build (which reside in the Java5 directory). Note that you must have the ANDROID_SDK environment variable set to the path to the Android SDK root, or most targets won't work.
 
 Eclipse, on the other hand, does not. To work with Eclipse:
 
