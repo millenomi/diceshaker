@@ -1,6 +1,10 @@
 Welcome to Diceshaker.
 
-Diceshaker is built by the new "Multiverse" ∞labs build infrastructure. This infrastructure is common and not replicated between projects. In the future, it will be a Git submodule, but for now you must clone it yourself; in both cases, you must set up your Xcode preferences or specify the path manually as a build setting for Diceshaker to build.
+This repository contains various versions of Diceshaker. Each is as fully functional as it can be; each is meant to be an exercise in mobile UI design and a nifty testbed for mobile OS tech.
+
+== iPhone version ==
+
+The iPhone version of Diceshaker is built by the "Multiverse" ∞labs build infrastructure. This infrastructure is common and not replicated between projects. In the future, it will be a Git submodule, but for now you must clone it yourself; in both cases, you must set up your Xcode preferences or specify the path manually as a build setting for Diceshaker to build.
 
 That is, you MUST first check out the repository at
 	http://github.com/millenomi/infinitelabs-build-tools
@@ -16,3 +20,21 @@ To build Diceshaker without errors:
  - from the Xcode IDE, choose Xcode > Preferences from the menu, select the Source Trees section, then add a new source tree called INFINITELABS_TOOLS that points to the checked out Tools repository's root. For example, if you have checked out the repository in /Projects/InfiniteLabsTools, use that as the path.
 
 The project references an iPhone development and distribution certificate that you won't have. Make sure you modify these settings in the project before you build this app for the device. (Future commits will make it easier to specify this information without "polluting" the pbxproj file with private settings.)
+
+== Android version ==
+
+The Android version of Diceshaker is developed with Eclipse and can be built with Ant. Building with Ant is as simple as:
+
+	ant
+	
+in the Android directory. The Ant build file already knows of the dependencies it has to build (which reside in the Java5 directory).
+
+Eclipse, on the other hand, does not. To work with Eclipse:
+
+ * Create a new Java project. Rather than creating the project in the workspace, select the Java5 folder as the root for this project.
+
+ * Create a new Android project. Rather than creating etc., select the Android folder as the root.
+
+ * Right- (or ctrl-, on the Mac) click on the Android project, choose Properties, then Java Build Path. Select the Projects tab, and add the Java project to the list. This lets Eclipse know of the dependency between projects.
+
+This usually works.
