@@ -6,9 +6,12 @@ import java.util.List;
 
 import net.infinite_labs.diceshaker.AppController;
 import net.infinite_labs.diceshaker.Dice;
+import net.infinite_labs.diceshaker.ShakeDetector;
 import android.app.Activity;
 import android.app.Dialog;
 import android.content.SharedPreferences;
+import android.hardware.SensorListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -134,6 +137,7 @@ public class Diceshaker extends Activity {
 	};
 	
 	private AppController controller;
+	private ShakeDetector detector = new ShakeDetector();
 	
 	private final int DicePickerDialogID = 1;
 	
@@ -142,6 +146,41 @@ public class Diceshaker extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
+        detector.setDelegate(new ShakeDetector.Delegate() {
+
+			public void didStartShaking(ShakeDetector self) {
+				controller.didAskToRollCurrent();
+			}
+
+			public void didStopShaking(ShakeDetector self) {}
+        	
+        });
+        
+        detector
+        	.setActivationThreshold((float) 0.7 * SensorManager.GRAVITY_EARTH)
+        	.setDeactivationThreshold((float) 0.3 * SensorManager.GRAVITY_EARTH);
+        
+        SensorManager sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        if (sensorManager != null) {
+        	if ((sensorManager.getSensors() & SensorManager.SENSOR_ACCELEROMETER) != 0) {
+        		sensorManager.registerListener(new SensorListener() {
+        			
+					public void onAccuracyChanged(int sensor, int accuracy) {}
+
+					public void onSensorChanged(int sensor, float[] accelerationInfo) {
+						float[] acceleration = {
+							accelerationInfo[SensorManager.DATA_X],
+							accelerationInfo[SensorManager.DATA_Y],
+							accelerationInfo[SensorManager.DATA_Z]
+						};
+						detector.feed(acceleration);
+					}
+        			
+        		}, SensorManager.SENSOR_ACCELEROMETER);
+        	} else
+        		sensorManager = null;
+        }
         
         controller = new AppController(model, view);
 
@@ -174,6 +213,9 @@ public class Diceshaker extends Activity {
 			}
         	
         });
+        
+        ((TextView) findViewById(R.id.promptLabel))
+        	.setText(sensorManager != null? R.string.shake_or_touch_roll_to_roll : R.string.touch_roll_to_roll);
         
         controller.didStart();
     }

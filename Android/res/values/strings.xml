@@ -2,4 +2,6 @@
 <resources>
     
     <string name="app_name">Diceshaker</string>
+<string name="shake_or_touch_roll_to_roll">Shake or choose &quot;Roll&quot; to roll.</string>
+<string name="touch_roll_to_roll">Choose &quot;Roll&quot; to roll.</string>
 </resources>
