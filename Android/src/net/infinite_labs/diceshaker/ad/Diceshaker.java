@@ -163,8 +163,6 @@ public class Diceshaker extends Activity {
         	.setActivationThreshold(1.2f)
         	.setDeactivationThreshold(0.2f);
         
-        Accelerometer.setPreferredClass(SimulatedAccelerometer.class);
-        
         accelerometer = Accelerometer.forContext(this);
         accelerometer.setListener(new SensorListener() {
 			public void onAccuracyChanged(int sensor, int accuracy) {}
