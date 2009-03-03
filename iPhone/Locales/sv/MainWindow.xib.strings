@@ -1,0 +1,24 @@
+
+/* Class = "IBUILabel"; text = "59"; ObjectID = "21"; */
+"21.text" = "59";
+
+/* Class = "IBUINavigationItem"; title = "3d6"; ObjectID = "29"; */
+"29.title" = "3d6";
+
+/* Class = "IBUIBarButtonItem"; title = "Roll"; ObjectID = "31"; */
+"31.title" = "Kasta";
+
+/* Class = "IBUILabel"; text = "Shake or touch \"Roll\" to roll."; ObjectID = "35"; */
+"35.text" = "Kasta genom att skaka eller röra vid \"Kasta\".";
+
+/* Class = "IBUILabel"; text = "12 + 1 + 3 + 4 + 5 + 7 + 2 + 9 + 8 + 8"; ObjectID = "39"; */
+"39.text" = "12 + 1 + 3 + 4 + 5 + 7 + 2 + 9 + 8 + 8";
+
+/* Class = "IBUINavigationController"; title = "Diceshaker"; ObjectID = "43"; */
+"43.title" = "Diceshaker";
+
+/* Class = "IBUINavigationItem"; title = "Diceshaker"; ObjectID = "47"; */
+"47.title" = "Diceshaker";
+
+/* Class = "IBUIBarButtonItem"; title = "Donate"; ObjectID = "52"; */
+"52.title" = "Donera";

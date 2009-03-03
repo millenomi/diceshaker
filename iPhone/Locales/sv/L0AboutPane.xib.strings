@@ -1,0 +1,21 @@
+
+/* Class = "IBUILabel"; text = "Diceshaker"; ObjectID = "13"; */
+"13.text" = "Diceshaker";
+
+/* Class = "IBUILabel"; text = "version %@\n© Emanuele Vulcano, 2008. All rights reserved."; ObjectID = "14"; */
+"14.text" = "version %@\n© Emanuele Vulcano, 2008. Alla rättigheter förbehålls.";
+
+/* Class = "IBUILabel"; text = "Sound & Vibration"; ObjectID = "19"; */
+"19.text" = "Ljud & vibration";
+
+/* Class = "IBUIButton"; disabledTitle = "Erase Rolls History"; ObjectID = "25"; */
+"25.disabledTitle" = "Radera kasthistorik";
+
+/* Class = "IBUIButton"; highlightedTitle = "Erase Rolls History"; ObjectID = "25"; */
+"25.highlightedTitle" = "Radera kasthistorik";
+
+/* Class = "IBUIButton"; normalTitle = "Erase Rolls History"; ObjectID = "25"; */
+"25.normalTitle" = "Radera kasthistorik";
+
+/* Class = "IBUIButton"; selectedTitle = "Erase Rolls History"; ObjectID = "25"; */
+"25.selectedTitle" = "Radera kasthistorik";
