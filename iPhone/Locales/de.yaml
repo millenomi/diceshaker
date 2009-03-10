@@ -1,0 +1,47 @@
+--- 
+L0DiceshakerNagDisabled.strings: 
+  The donations alert has been disabled.: Der Spendenhinweis wurde abgeschaltet.
+  Dismiss: Abschalten
+L0DiceshakerFirstNag.strings: 
+  Maybe Later: "Vielleicht sp\xC3\xA4ter"
+  Do you like Diceshaker?: Magst du Diceshaker?
+  Donate: Spenden
+  If you do, you can support its author with a small token of your gratitude.: "Falls dir Diceshaker gef\xC3\xA4llt, kannst du deine Dankbarkeit beim Entwickler mit einer kleinen Spende ausdr\xC3\xBCcken."
+MainWindow.xib.strings: 
+  31.title: "W\xC3\xBCrfeln"
+  64.title: Senden
+  47.title: Diceshaker
+  43.title: Diceshaker
+  70.title: Spenden
+  58.prompt: "Wurf an \xE2\x80\x9C%@\xE2\x80\x9D senden"
+  58.title: Diceshaker
+  35.text: "Sch\xC3\xBCtteln oder den Button \"W\xC3\xBCrfeln\" antippen."
+  10.title: Diceshaker
+  29.title: 3w6
+  39.text: 12 + 1 + 3 + 4 + 5 + 7 + 2 + 9 + 8 + 8
+  21.text: "59"
+L0DiceshakerUnknownURL.strings: 
+  Dismiss: Abschalten
+  App Store: App Store
+  The link used to open this application doesn't have a command Diceshaker understands.: Der Link durch den Diceshaker gestartet wurde beinhaltet einen unbekannten Befehl.
+  Maybe a newer version of Diceshaker can understand the command. Try looking in App Store for an update.: "M\xC3\xB6glicherweise versteht eine neuere Version von Diceshaker den Befehl. Versuche ein Update im App Store."
+L0AboutPane.xib.strings: 
+  25.selectedTitle: "Wurfhistorie l\xC3\xB6schen"
+  25.highlightedTitle: "Wurfhistorie l\xC3\xB6schen"
+  14.text: "version %@\n\
+    \xC2\xA9 Emanuele Vulcano, 2008. All rights reserved."
+  13.text: Diceshaker
+  19.text: Sound & Vibration
+  25.disabledTitle: "Wurfhistorie l\xC3\xB6schen"
+  25.normalTitle: "Wurfhistorie l\xC3\xB6schen"
+L0DiceshakerLastNag.strings: 
+  Do you like Diceshaker?: Magst du Diceshaker?
+  No, Thanks: Nein, danke
+  Donate: Spenden
+  If you do, you can support its author with a small token of your gratitude.: "Falls dir Diceshaker gef\xC3\xA4llt, kannst du deine Dankbarkeit beim Entwickler mit einer kleinen Spende ausdr\xC3\xBCcken."
+Localizable.strings: 
+  Sound & Vibration: Sound & Vibration
+  "%dd%d": "%1$dw%2$d"
+  Sound: Sound
+  Erase: "L\xC3\xB6schen"
+  Cancel: Abbrechen

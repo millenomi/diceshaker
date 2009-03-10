@@ -11,7 +11,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>${USER_VISIBLE_VERSION}</string>
 	<key>CFBundleDevelopmentRegion</key>
-	<string>en</string>
+	<string>English</string>
 	<key>CFBundleDisplayName</key>
 	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleExecutable</key>

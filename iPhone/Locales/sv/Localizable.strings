@@ -1,12 +1,5 @@
-/* Cancel button title */
-"Cancel" = "Avbryt";
-
-/* Erase button title */
-"Erase" = "Radera";
-
-/* Sound switch label on iPod (without 'vibration') */
-"Sound" = "Ljud";
-
-/* Sound switch label on iPhone */
 "Sound & Vibration" = "Ljud & vibration";
-
+"Erase" = "Radera";
+"Sound" = "Ljud";
+"Cancel" = "Avbryt";
+"%dd%d" = "%1$dd%2$d";

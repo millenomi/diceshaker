@@ -21,7 +21,7 @@
 }
 
 - (NSString*) description {
-	return [NSString stringWithFormat:@"%dd%d", self.numberOfDice, self.numberOfFacesPerDie];
+	return [NSString stringWithFormat:NSLocalizedString(@"%dd%d", @"Dice description string"), self.numberOfDice, self.numberOfFacesPerDie];
 }
 
 - (id) copyWithZone:(NSZone*) z {

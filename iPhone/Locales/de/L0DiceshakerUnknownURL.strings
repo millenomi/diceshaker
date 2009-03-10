@@ -1,4 +1,4 @@
 "App Store" = "App Store";
-"Dismiss" = "Dismiss";
-"The link used to open this application doesn't have a command Diceshaker understands." = "The link used to open this application doesn't have a command Diceshaker understands.";
-"Maybe a newer version of Diceshaker can understand the command. Try looking in App Store for an update." = "Maybe a newer version of Diceshaker can understand the command. Try looking in App Store for an update.";
+"Dismiss" = "Abschalten";
+"The link used to open this application doesn't have a command Diceshaker understands." = "Der Link durch den Diceshaker gestartet wurde beinhaltet einen unbekannten Befehl.";
+"Maybe a newer version of Diceshaker can understand the command. Try looking in App Store for an update." = "M\U00f6glicherweise versteht eine neuere Version von Diceshaker den Befehl. Versuche ein Update im App Store.";

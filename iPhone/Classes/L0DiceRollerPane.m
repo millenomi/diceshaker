@@ -185,9 +185,10 @@
 				imageView = [[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 180, 180)] autorelease];
 			
 			NSNumber* num = [sides objectAtIndex:row];
-			NSString* imgName = [NSString stringWithFormat:@"d%@.png", num];
+			NSString* imgName = [NSString stringWithFormat:@"d%@", num];
+			NSString* imgPath = [[NSBundle mainBundle] pathForResource:imgName ofType:@"png"];
 			
-			UIImage* img = [UIImage imageNamed:imgName];
+			UIImage* img = [[[UIImage alloc] initWithContentsOfFile:imgPath] autorelease];
 			imageView.image = img;
 			
 			return imageView;
