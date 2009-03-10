@@ -10,13 +10,10 @@
     android:layout_height="wrap_content"
     android:baselineAligned="true" android:gravity="center_vertical|center_horizontal">
 
-<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:gravity="center">    
-	<Button android:id="@+id/addDieButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" android:textSize="30px"></Button>
-<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">    
-	<EditText android:id="@+id/diceNumberField" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:gravity="center"></EditText>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:orientation="horizontal" android:gravity="center">    
+	<EditText android:id="@+id/diceNumberField" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:gravity="center"><requestFocus/></EditText>
 	<Spinner android:id="@+id/diceFacesSpinner" android:layout_width="wrap_content" android:layout_height="wrap_content"></Spinner>
-</LinearLayout>
-	<Button android:id="@+id/removeDieButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textSize="30px" android:text="-"></Button>
+	<net.infinite_labs.DraggableWheel />
 </LinearLayout>
 
 

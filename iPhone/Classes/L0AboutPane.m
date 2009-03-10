@@ -9,6 +9,13 @@
 #import "L0AboutPane.h"
 #import "DiceshakerAppDelegate.h"
 
+@interface L0AboutPane ()
+
+- (BOOL) _deviceSupportsVibration;
+
+@end
+
+
 @implementation L0AboutPane
 
 @synthesize versionLabel, soundSwitch;
@@ -23,11 +30,20 @@
 	self.soundSwitch.on = [[NSUserDefaults standardUserDefaults] boolForKey:kL0DiceshakerShouldPlaySoundDefault];
 }
 
+- (BOOL) _deviceSupportsVibration {
+#if defined(DEBUG) && defined(TARGET_IPHONE_SIMULATOR) && defined(L0DiceshakerSimulateiPodTouch)
+#warning Simulating an iPod touch.
+	return NO;
+#else
+	return [[UIDevice currentDevice].model rangeOfString:@"iPhone" options:NSCaseInsensitiveSearch].location != NSNotFound;
+#endif
+}
+
 - (void) viewDidLoad {
 	self.view.backgroundColor = [UIColor viewFlipsideBackgroundColor];
 	
 	versionLabel.text = [NSString stringWithFormat:versionLabel.text, [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
-	if ([[UIDevice currentDevice].model rangeOfString:@"iPhone" options:NSCaseInsensitiveSearch].location != NSNotFound)
+	if ([self _deviceSupportsVibration])
 		soundSwitchLabel.text = NSLocalizedString(@"Sound & Vibration", @"Sound switch label on iPhone");
 	else
 		soundSwitchLabel.text = NSLocalizedString(@"Sound", @"Sound switch label on iPod (without 'vibration')");

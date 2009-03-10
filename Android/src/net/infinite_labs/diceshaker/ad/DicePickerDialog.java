@@ -60,6 +60,7 @@ public class DicePickerDialog extends Dialog {
 		
 		});
 		
+		/*
 		((Button) findViewById(R.id.addDieButton))
 			.setOnClickListener(new View.OnClickListener() {
 
@@ -77,6 +78,7 @@ public class DicePickerDialog extends Dialog {
 				}
 				
 		});
+		*/
 		
 		final EditText field = ((EditText) findViewById(R.id.diceNumberField));
 		field

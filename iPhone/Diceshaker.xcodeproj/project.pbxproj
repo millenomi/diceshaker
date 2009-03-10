@@ -28,6 +28,7 @@
 		152D5ED20F44542100FDAA05 /* it.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 152D5EC90F44542100FDAA05 /* it.lproj */; };
 		152E43080E4780670034168E /* L0AboutPane.xib in Resources */ = {isa = PBXBuildFile; fileRef = 152E43060E4780670034168E /* L0AboutPane.xib */; };
 		152E43180E4781050034168E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 152E43160E4781050034168E /* Localizable.strings */; };
+		1535112A0F5D478600AFBCE0 /* sv.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 153511210F5D478600AFBCE0 /* sv.lproj */; };
 		1544B7960EA7C59700695980 /* UIAlertView+L0Alert.m in Sources */ = {isa = PBXBuildFile; fileRef = 1544B7940EA7C59700695980 /* UIAlertView+L0Alert.m */; };
 		1544B7CE0EA7CC4B00695980 /* L0DiceshakerFirstNag.alert in Resources */ = {isa = PBXBuildFile; fileRef = 1544B7CC0EA7CC4B00695980 /* L0DiceshakerFirstNag.alert */; };
 		1544B7CF0EA7CC4B00695980 /* L0DiceshakerLastNag.alert in Resources */ = {isa = PBXBuildFile; fileRef = 1544B7CD0EA7CC4B00695980 /* L0DiceshakerLastNag.alert */; };
@@ -85,6 +86,7 @@
 		152D5EC90F44542100FDAA05 /* it.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = it.lproj; path = "Compiled Locales/it.lproj"; sourceTree = "<group>"; };
 		152E43070E4780670034168E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/L0AboutPane.xib; sourceTree = "<group>"; };
 		152E43170E4781050034168E /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/Localizable.strings; sourceTree = "<group>"; };
+		153511210F5D478600AFBCE0 /* sv.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = sv.lproj; path = "Compiled Locales/sv.lproj"; sourceTree = "<group>"; };
 		1544B7940EA7C59700695980 /* UIAlertView+L0Alert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+L0Alert.m"; sourceTree = "<group>"; };
 		1544B7950EA7C59700695980 /* UIAlertView+L0Alert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+L0Alert.h"; sourceTree = "<group>"; };
 		1544B7CC0EA7CC4B00695980 /* L0DiceshakerFirstNag.alert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = L0DiceshakerFirstNag.alert; sourceTree = "<group>"; };
@@ -175,6 +177,15 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		1535110A0F5D476600AFBCE0 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				153511210F5D478600AFBCE0 /* sv.lproj */,
+				152D5EC90F44542100FDAA05 /* it.lproj */,
+			);
+			name = Localization;
+			sourceTree = "<group>";
+		};
 		154E19700F45F0DF00E95292 /* Dice Images */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,7 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				154E19700F45F0DF00E95292 /* Dice Images */,
-				152D5EC90F44542100FDAA05 /* it.lproj */,
+				1535110A0F5D476600AFBCE0 /* Localization */,
 				15A3E6800EDFD75B0074434F /* L0DiceshakerUnknownURL.alert */,
 				1555A8E00EDF5D95009EC3F5 /* L0DiceshakerNagDisabled.alert */,
 				1544B7CC0EA7CC4B00695980 /* L0DiceshakerFirstNag.alert */,
@@ -308,6 +319,7 @@
 				French,
 				German,
 				Italian,
+				sv,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -352,6 +364,7 @@
 				154E196C0F45F0DB00E95292 /* d3.png in Resources */,
 				154E196D0F45F0DB00E95292 /* d20.png in Resources */,
 				154E196E0F45F0DB00E95292 /* d12.png in Resources */,
+				1535112A0F5D478600AFBCE0 /* sv.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
