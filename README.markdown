@@ -1,27 +1,26 @@
-Welcome to Diceshaker.
+# Welcome to Diceshaker.
 
 This repository contains various versions of Diceshaker. Each is as fully functional as it can be; each is meant to be an exercise in mobile UI design and a nifty testbed for mobile OS tech.
 
-== iPhone version ==
+## iPhone version
 
 The iPhone version of Diceshaker is built by the "Multiverse" ∞labs build infrastructure. This infrastructure is common and not replicated between projects. In the future, it will be a Git submodule, but for now you must clone it yourself; in both cases, you must set up your Xcode preferences or specify the path manually as a build setting for Diceshaker to build.
 
-That is, you MUST first check out the repository at
-	http://github.com/millenomi/infinitelabs-build-tools
-and set your system up to find these files during the build as the INFINITELABS_TOOLS source tree.
+That is, you MUST first check out the repository at [http://github.com/millenomi/infinitelabs-build-tools](http://github.com/millenomi/infinitelabs-build-tools)
+and set your system up to find these files during the build as the `INFINITELABS_TOOLS` source tree.
 
 To build Diceshaker without errors:
 
- - from the command line, set the INFINITELABS_TOOLS build setting to the full path to the Tools directory you checked out. For example, if you have checked out the repository in /Projects/Diceshaker and the tools in /Projects/InfiniteLabsTools, the following will build Diceshaker correctly:
+ - from the command line, set the `INFINITELABS_TOOLS` build setting to the full path to the Tools directory you checked out. For example, if you have checked out the repository in `/Projects/Diceshaker` and the tools in `/Projects/InfiniteLabsTools`, the following will build Diceshaker correctly:
 
-	cd /Projects/Diceshaker
-	xcodebuild -configuration -sdk iphonesimulator2.2 -Debug clean build INFINITELABS_TOOLS=/Projects/InfiniteLabsTools
+		cd /Projects/Diceshaker
+		xcodebuild -configuration Debug -sdk iphonesimulator2.2 clean build INFINITELABS_TOOLS=/Projects/InfiniteLabsTools
 	
- - from the Xcode IDE, choose Xcode > Preferences from the menu, select the Source Trees section, then add a new source tree called INFINITELABS_TOOLS that points to the checked out Tools repository's root. For example, if you have checked out the repository in /Projects/InfiniteLabsTools, use that as the path.
+ - from the Xcode IDE, choose Xcode > Preferences from the menu, select the Source Trees section, then add a new source tree called `INFINITELABS_TOOLS` that points to the checked out Tools repository's root. For example, if you have checked out the repository in `/Projects/InfiniteLabsTools`, use that as the path.
 
 The project references an iPhone development and distribution certificate that you won't have. Make sure you modify these settings in the project before you build this app for the device. (Future commits will make it easier to specify this information without "polluting" the pbxproj file with private settings.)
 
-== Android version ==
+## Android version
 
 The Android version of Diceshaker is developed with Eclipse and can be built with Ant. Building with Ant is as simple as:
 
