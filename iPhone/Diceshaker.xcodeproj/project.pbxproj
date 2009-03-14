@@ -549,7 +549,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		152E43F80E4783C20034168E /* Distribution */ = {
+		152E43F80E4783C20034168E /* App Store */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */;
 			buildSettings = {
@@ -560,9 +560,9 @@
 				IBC_NOTICES = NO;
 				PREBINDING = NO;
 			};
-			name = Distribution;
+			name = "App Store";
 		};
-		152E43F90E4783C20034168E /* Distribution */ = {
+		152E43F90E4783C20034168E /* App Store */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -574,7 +574,7 @@
 				PRODUCT_NAME = Diceshaker;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "99984C3B-E139-44B6-8A42-AD57C662B8B8";
 			};
-			name = Distribution;
+			name = "App Store";
 		};
 		154232590E6F3BA900335D5C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -597,12 +597,12 @@
 			};
 			name = Release;
 		};
-		1542325B0E6F3BA900335D5C /* Distribution */ = {
+		1542325B0E6F3BA900335D5C /* App Store */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_NAME = "Update Localizations";
 			};
-			name = Distribution;
+			name = "App Store";
 		};
 		15C8589C0E7855A4001156CB /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
@@ -702,7 +702,7 @@
 			buildConfigurations = (
 				154232590E6F3BA900335D5C /* Debug */,
 				1542325A0E6F3BA900335D5C /* Release */,
-				1542325B0E6F3BA900335D5C /* Distribution */,
+				1542325B0E6F3BA900335D5C /* App Store */,
 				15C8589E0E7855A4001156CB /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -713,7 +713,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
-				152E43F90E4783C20034168E /* Distribution */,
+				152E43F90E4783C20034168E /* App Store */,
 				15C8589D0E7855A4001156CB /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -724,7 +724,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
-				152E43F80E4783C20034168E /* Distribution */,
+				152E43F80E4783C20034168E /* App Store */,
 				15C8589C0E7855A4001156CB /* Ad Hoc */,
 			);
 			defaultConfigurationIsVisible = 0;
