@@ -11,6 +11,15 @@ and set your system up to find these files during the build as the `INFINITELABS
 
 To build Diceshaker without errors:
 
+ - from the command line, you may use the experimental Unified Build scripts in the Tools distribution to build the project. For example, if you have checked out the repository in `/Projects/Diceshaker` and the tools in `/Projects/InfiniteLabsTools`, the following will build Diceshaker correctly for testing:
+
+		/Projects/InfiniteLabsTools/Unified/Build /Projects/Diceshaker --debug
+	
+	The Unified Build Tools switches are in flux, but currently you can use the following:
+	
+	* Build styles: `--debug`, `--iphone-ad-hoc`, `--iphone-app-store`; also `--release` (which is short for `--iphone-ad-hoc --iphone-app-store`). You can combine these in a single build. Also, `--all` will build all available styles (which is the default).
+	* Build options: `--iphone-development-identity CERTIFICATE_NAME`, `--iphone-distribution-identity CERTIFICATE_NAME`; `--iphone-ad-hoc-profile UUID`, `--iphone-app-store-profile UUID` (where `UUID` is the identifier attached to the provisioning profile — if you install the profile via Xcode or the [iPhone Configuration Utility](http://support.apple.com/downloads/iPhone_Configuration_Utility_1_1_for_Mac_OS_X), the profile's installed copy will be renamed to its UUID); `--fast`, which performs a build without cleaning the built products first.
+
  - from the command line, set the `INFINITELABS_TOOLS` build setting to the full path to the Tools directory you checked out. For example, if you have checked out the repository in `/Projects/Diceshaker` and the tools in `/Projects/InfiniteLabsTools`, the following will build Diceshaker correctly:
 
 		cd /Projects/Diceshaker
