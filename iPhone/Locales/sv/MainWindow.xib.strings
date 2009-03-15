@@ -3,11 +3,11 @@
 "70.title" = "Donera";
 "47.title" = "Diceshaker";
 "52.title" = "Donera";
-"29.title" = "3d6";
+"29.title" = "3T6";
 "35.text" = "Kasta genom att skaka eller r\U00f6ra vid \"Kasta\".";
 "43.title" = "Diceshaker";
-"58.prompt" = "Send your dice roll to \U201c%@\U201d";
+"58.prompt" = "Skicka t\U00e4rningskastet till \U201c%@\U201d";
 "39.text" = "12 + 1 + 3 + 4 + 5 + 7 + 2 + 9 + 8 + 8";
-"64.title" = "Send";
+"64.title" = "Skicka";
 "31.title" = "Kasta";
 "21.text" = "59";
