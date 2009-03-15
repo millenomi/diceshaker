@@ -1,5 +1,5 @@
-"Sound & Vibration" = "Ljud & vibration";
+"Sound & Vibration" = "Ljud och vibration";
 "Erase" = "Radera";
-"Sound" = "Ljud";
 "Cancel" = "Avbryt";
-"%dd%d" = "%1$dd%2$d";
+"Sound" = "Ljud";
+"%dd%d" = "%1$dT%2$d";
