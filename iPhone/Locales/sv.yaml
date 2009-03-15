@@ -1,30 +1,30 @@
 --- 
 L0DiceshakerNagDisabled.strings: 
   The donations alert has been disabled.: "Donationsp\xC3\xA5minnelsen har st\xC3\xA4ngts av."
-  Dismiss: "Avb\xC3\xB6j"
+  Dismiss: "Avf\xC3\xA4rda"
+MainWindow.xib.strings: 
+  52.title: Donera
+  31.title: Kasta
+  64.title: Send
+  43.title: Diceshaker
+  47.title: Diceshaker
+  70.title: Donera
+  58.prompt: "Send your dice roll to \xE2\x80\x9C%@\xE2\x80\x9D"
+  58.title: Diceshaker
+  35.text: "Kasta genom att skaka eller r\xC3\xB6ra vid \"Kasta\"."
+  10.title: Diceshaker
+  21.text: "59"
+  39.text: 12 + 1 + 3 + 4 + 5 + 7 + 2 + 9 + 8 + 8
+  29.title: 3d6
 L0DiceshakerFirstNag.strings: 
   Maybe Later: Kanske senare
   Do you like Diceshaker?: Gillar du Diceshaker?
   Donate: Donera
   If you do, you can support its author with a small token of your gratitude.: "Om du g\xC3\xB6r det kan du st\xC3\xB6dja skaparen med en symbolisk summa."
-MainWindow.xib.strings: 
-  52.title: Donera
-  64.title: Send
-  31.title: Kasta
-  47.title: Diceshaker
-  43.title: Diceshaker
-  70.title: Donate
-  58.prompt: "Send your dice roll to \xE2\x80\x9C%@\xE2\x80\x9D"
-  58.title: Diceshaker
-  35.text: "Kasta genom att skaka eller r\xC3\xB6ra vid \"Kasta\"."
-  10.title: Diceshaker
-  29.title: 3d6
-  39.text: 12 + 1 + 3 + 4 + 5 + 7 + 2 + 9 + 8 + 8
-  21.text: "59"
 L0DiceshakerUnknownURL.strings: 
-  Dismiss: "Avb\xC3\xB6j"
-  App Store: Appe Store
+  Dismiss: "Avf\xC3\xA4rda"
   The link used to open this application doesn't have a command Diceshaker understands.: "L\xC3\xA4nken som programmet \xC3\xB6ppnades med inneh\xC3\xB6ll inte n\xC3\xA5got kommando som Diceshaker f\xC3\xB6rst\xC3\xA5r."
+  App Store: App Store
   Maybe a newer version of Diceshaker can understand the command. Try looking in App Store for an update.: "En senare version av Diceshaker kanske f\xC3\xB6rst\xC3\xA5r kommandot. Det kan finnas en senare version i App Store."
 L0AboutPane.xib.strings: 
   25.selectedTitle: Radera kasthistorik
@@ -33,16 +33,16 @@ L0AboutPane.xib.strings:
     \xC2\xA9 Emanuele Vulcano, 2008. Alla r\xC3\xA4ttigheter f\xC3\xB6rbeh\xC3\xA5lls."
   13.text: Diceshaker
   19.text: Ljud & vibration
-  25.disabledTitle: Radera kasthistorik
   25.normalTitle: Radera kasthistorik
+  25.disabledTitle: Radera kasthistorik
 L0DiceshakerLastNag.strings: 
   Do you like Diceshaker?: Gillar du Diceshaker?
-  No, Thanks: Nej tack
   Donate: Donera
+  No, Thanks: Nej tack
   If you do, you can support its author with a small token of your gratitude.: "Om du g\xC3\xB6r det kan du st\xC3\xB6dja skaparen med en symbolisk summa."
 Localizable.strings: 
-  Sound & Vibration: Ljud & vibration
-  "%dd%d": "%1$dd%2$d"
+  Sound & Vibration: Ljud och vibration
   Sound: Ljud
+  "%dd%d": "%1$dT%2$d"
   Erase: Radera
   Cancel: Avbryt
