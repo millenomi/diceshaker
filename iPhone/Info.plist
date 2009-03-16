@@ -6,8 +6,8 @@
 	<string>http://infinite-labs.net/diceshaker/donate/</string>
 	<key>L0DiceshakerAppStoreURL</key>
 	<string>http://phobos.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=287322475&amp;mt=8</string>
-	<key>L0DiceshakerMotto</key>
-	<string>Per aspera ad astra</string>
+	<key>ILMotto</key>
+	<string>&quot;Per aspera ad astra.&quot;</string>
 	<key>CFBundleShortVersionString</key>
 	<string>${USER_VISIBLE_VERSION}</string>
 	<key>CFBundleDevelopmentRegion</key>
