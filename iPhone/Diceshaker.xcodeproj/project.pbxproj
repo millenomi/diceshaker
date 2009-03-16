@@ -53,6 +53,7 @@
 		158240390E477FED00107A4B /* L0DiceRollerPane.m in Sources */ = {isa = PBXBuildFile; fileRef = 1546C52F0E47164300B3EF0C /* L0DiceRollerPane.m */; };
 		1585A1950E47A21B00D2015B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1585A1940E47A21B00D2015B /* Default.png */; };
 		15934EC50F4589AC00EFADD4 /* L0DraggableNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 15934EC40F4589AC00EFADD4 /* L0DraggableNavigationBar.m */; };
+		15972C470F6E68CC00064EC2 /* Default-x-infinitelabs-diceshaker.png in Resources */ = {isa = PBXBuildFile; fileRef = 15972C460F6E68CC00064EC2 /* Default-x-infinitelabs-diceshaker.png */; };
 		15A3E6810EDFD75B0074434F /* L0DiceshakerUnknownURL.alert in Resources */ = {isa = PBXBuildFile; fileRef = 15A3E6800EDFD75B0074434F /* L0DiceshakerUnknownURL.alert */; };
 		15A3E6A10EDFD87B0074434F /* L0DiceshakerUnknownURL.strings in Resources */ = {isa = PBXBuildFile; fileRef = 15A3E69F0EDFD87B0074434F /* L0DiceshakerUnknownURL.strings */; };
 		15ACF4050E4760D500A41681 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF4040E4760D500A41681 /* Icon.png */; };
@@ -117,6 +118,7 @@
 		1585A1940E47A21B00D2015B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		15934EC30F4589AC00EFADD4 /* L0DraggableNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = L0DraggableNavigationBar.h; sourceTree = "<group>"; };
 		15934EC40F4589AC00EFADD4 /* L0DraggableNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = L0DraggableNavigationBar.m; sourceTree = "<group>"; };
+		15972C460F6E68CC00064EC2 /* Default-x-infinitelabs-diceshaker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-x-infinitelabs-diceshaker.png"; sourceTree = "<group>"; };
 		15A3E6570EDFD5740074434F /* Locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Locales; sourceTree = "<group>"; };
 		15A3E6800EDFD75B0074434F /* L0DiceshakerUnknownURL.alert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = L0DiceshakerUnknownURL.alert; sourceTree = "<group>"; };
 		15A3E6A00EDFD87B0074434F /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/L0DiceshakerUnknownURL.strings; sourceTree = "<group>"; };
@@ -260,6 +262,7 @@
 				1544B7CC0EA7CC4B00695980 /* L0DiceshakerFirstNag.alert */,
 				1544B7CD0EA7CC4B00695980 /* L0DiceshakerLastNag.alert */,
 				1585A1940E47A21B00D2015B /* Default.png */,
+				15972C460F6E68CC00064EC2 /* Default-x-infinitelabs-diceshaker.png */,
 				15ACF4310E4764B300A41681 /* inflabs.png */,
 				15ACF45C0E476B3100A41681 /* roll.aiff */,
 				15ACF4390E47653F00A41681 /* inflabs_dark.png */,
@@ -369,6 +372,7 @@
 				157D17890F66F13A00E2BFB8 /* d12.png in Resources */,
 				1535112A0F5D478600AFBCE0 /* sv.lproj in Resources */,
 				157D17AB0F67125800E2BFB8 /* de.lproj in Resources */,
+				15972C470F6E68CC00064EC2 /* Default-x-infinitelabs-diceshaker.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

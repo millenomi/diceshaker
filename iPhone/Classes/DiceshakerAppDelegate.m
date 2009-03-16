@@ -23,6 +23,13 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 	(deltaY > threshold && deltaZ > threshold);
 }
 
+@interface DiceshakerAppDelegate ()
+
+- (void) _putIntoCrossApplicationCommunicationMode;
+
+@end
+
+
 @implementation DiceshakerAppDelegate
 
 @synthesize window, mainController, backSideController, currentDice, lastRoll, history, lastAcceleration, flippingBack, navigationController;
@@ -100,7 +107,8 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 		
 		if (title && returnCrossAppURL) {
 			mainController.navigationItem.prompt = [NSString stringWithFormat:mainController.navigationItem.prompt, title];
-			[self performSelector:@selector(_putIntoCrossApplicationCommunicationMode) withObject:nil afterDelay:0.5];
+			// [self performSelector:@selector(_putIntoCrossApplicationCommunicationMode) withObject:nil afterDelay:0.0];
+			[self _putIntoCrossApplicationCommunicationMode];
 			handledCrossAppURL = YES;
 			return YES;
 		}
@@ -115,8 +123,9 @@ static BOOL L0AccelerationIsShaking(UIAcceleration* last, UIAcceleration* curren
 }
 
 - (void) _putIntoCrossApplicationCommunicationMode {
-	[self roll];
-	[mainController.navigationController setNavigationBarHidden:NO animated:YES];
+	//[self roll];
+	[self performSelector:@selector(roll) withObject:nil afterDelay:0.0];
+	[mainController.navigationController setNavigationBarHidden:NO animated:NO];
 }
 
 - (void) _sendToOtherApp:(NSDictionary*) d;
