@@ -130,6 +130,8 @@
 		15ACF4460E47695000A41681 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		15ACF45C0E476B3100A41681 /* roll.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = roll.aiff; sourceTree = "<group>"; };
 		15C858AB0E7856C8001156CB /* AdHoc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AdHoc.plist; sourceTree = "<group>"; };
+		15D1C5550F889AAE00FF3016 /* Diceshaker-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Diceshaker-Debug.xcconfig"; sourceTree = "<group>"; };
+		15D1C5650F889BEF00FF3016 /* Diceshaker-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Diceshaker-Release.xcconfig"; sourceTree = "<group>"; };
 		15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Diceshaker.xcconfig; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* DiceshakerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiceshakerAppDelegate.h; sourceTree = "<group>"; };
@@ -216,6 +218,16 @@
 			name = "Cross-app Communication";
 			sourceTree = "<group>";
 		};
+		15D1C5510F889A8500FF3016 /* Configuration Files */ = {
+			isa = PBXGroup;
+			children = (
+				15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */,
+				15D1C5650F889BEF00FF3016 /* Diceshaker-Release.xcconfig */,
+				15D1C5550F889AAE00FF3016 /* Diceshaker-Debug.xcconfig */,
+			);
+			name = "Configuration Files";
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,7 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				15C858AB0E7856C8001156CB /* AdHoc.plist */,
-				15EC9C010E61AC2D00AAEADE /* Diceshaker.xcconfig */,
+				15D1C5510F889A8500FF3016 /* Configuration Files */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				15A3E6570EDFD5740074434F /* Locales */,
@@ -568,15 +580,14 @@
 		};
 		152E43F90E4783C20034168E /* App Store */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D1C5650F889BEF00FF3016 /* Diceshaker-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = Diceshaker;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "99984C3B-E139-44B6-8A42-AD57C662B8B8";
 			};
 			name = "App Store";
 		};
@@ -623,10 +634,10 @@
 		};
 		15C8589D0E7855A4001156CB /* Ad Hoc */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D1C5650F889BEF00FF3016 /* Diceshaker-Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_ENTITLEMENTS = "$(SRCROOT)/AdHoc.plist";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_ENTITLEMENTS = AdHoc.plist;
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Diceshaker_Prefix.pch;
@@ -644,6 +655,7 @@
 		};
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D1C5550F889AAE00FF3016 /* Diceshaker-Debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
@@ -654,7 +666,6 @@
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
 				INFOPLIST_FILE = Info.plist;
 				PRODUCT_NAME = Diceshaker;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = DefaultProfileUuid;
 			};
 			name = Debug;
 		};
