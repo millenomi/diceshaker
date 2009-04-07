@@ -63,6 +63,7 @@
 		15ACF4400E47691A00A41681 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15ACF43F0E47691A00A41681 /* CoreAudio.framework */; };
 		15ACF4470E47695000A41681 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15ACF4460E47695000A41681 /* AudioToolbox.framework */; };
 		15ACF45D0E476B3100A41681 /* roll.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 15ACF45C0E476B3100A41681 /* roll.aiff */; };
+		15BACA080F8BBE7F00FC9278 /* pl.lproj in Resources */ = {isa = PBXBuildFile; fileRef = 15BAC9F60F8BBE7F00FC9278 /* pl.lproj */; };
 		1D3623260D0F684500981E51 /* DiceshakerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* DiceshakerAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -129,6 +130,7 @@
 		15ACF43F0E47691A00A41681 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		15ACF4460E47695000A41681 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		15ACF45C0E476B3100A41681 /* roll.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = roll.aiff; sourceTree = "<group>"; };
+		15BAC9F60F8BBE7F00FC9278 /* pl.lproj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = pl.lproj; path = "Compiled Locales/pl.lproj"; sourceTree = "<group>"; };
 		15C858AB0E7856C8001156CB /* AdHoc.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AdHoc.plist; sourceTree = "<group>"; };
 		15D1C5550F889AAE00FF3016 /* Diceshaker-Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Diceshaker-Debug.xcconfig"; sourceTree = "<group>"; };
 		15D1C5650F889BEF00FF3016 /* Diceshaker-Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Diceshaker-Release.xcconfig"; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		1535110A0F5D476600AFBCE0 /* Localization */ = {
 			isa = PBXGroup;
 			children = (
+				15BAC9F60F8BBE7F00FC9278 /* pl.lproj */,
 				157D17990F67125800E2BFB8 /* de.lproj */,
 				153511210F5D478600AFBCE0 /* sv.lproj */,
 				152D5EC90F44542100FDAA05 /* it.lproj */,
@@ -338,6 +341,7 @@
 				German,
 				Italian,
 				sv,
+				pl,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
@@ -385,6 +389,7 @@
 				1535112A0F5D478600AFBCE0 /* sv.lproj in Resources */,
 				157D17AB0F67125800E2BFB8 /* de.lproj in Resources */,
 				15972C470F6E68CC00064EC2 /* Default-x-infinitelabs-diceshaker.png in Resources */,
+				15BACA080F8BBE7F00FC9278 /* pl.lproj in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
