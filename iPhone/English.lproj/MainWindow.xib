@@ -9,7 +9,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="42"/>
-			<integer value="14"/>
+			<integer value="29"/>
 			<integer value="66"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
@@ -196,6 +196,7 @@
 															<string key="NSClassName">NSImage</string>
 															<string key="NSResourceName">Dice.png</string>
 														</object>
+														<int key="IBUIStyle">1</int>
 													</object>
 													<object class="IBUIBarButtonItem" key="IBUIRightBarButtonItem" id="1068766568">
 														<string key="IBUITitle">Roll</string>
