@@ -1,4 +1,4 @@
 "App Store" = "App Store";
-"Dismiss" = "Dismiss";
-"Maybe a newer version of Diceshaker can understand the command. Try looking in App Store for an update." = "Maybe a newer version of Diceshaker can understand the command. Try looking in App Store for an update.";
-"The link used to open this application doesn't have a command Diceshaker understands." = "The link used to open this application doesn't have a command Diceshaker understands.";
+"Dismiss" = "Odrzuć";
+"Maybe a newer version of Diceshaker can understand the command. Try looking in App Store for an update." = "Być może nowsza wersja zrozumie to polecenie. Sprawdź czy nie są dostępne aktualizacje.";
+"The link used to open this application doesn't have a command Diceshaker understands." = "Łącze odwołujące się do aplikacji posiada polecenie którego nie rozumiem.";
