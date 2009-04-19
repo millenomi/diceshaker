@@ -8,9 +8,9 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="42"/>
-			<integer value="29"/>
 			<integer value="66"/>
+			<integer value="29"/>
+			<integer value="42"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -496,6 +496,14 @@
 					</object>
 					<int key="connectionID">71</int>
 				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">infoButton</string>
+						<reference key="source" ref="836829342"/>
+						<reference key="destination" ref="508537979"/>
+					</object>
+					<int key="connectionID">72</int>
+				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
 				<object class="NSArray" key="orderedObjects">
@@ -827,7 +835,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">71</int>
+			<int key="maxID">72</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -948,6 +956,7 @@
 							<string>dicePicker</string>
 							<string>eachDieLabel</string>
 							<string>historyTable</string>
+							<string>infoButton</string>
 							<string>infoButtonHeaderView</string>
 							<string>resultLabel</string>
 						</object>
@@ -959,6 +968,7 @@
 							<string>UIPickerView</string>
 							<string>UILabel</string>
 							<string>UITableView</string>
+							<string>UIButton</string>
 							<string>UIView</string>
 							<string>UILabel</string>
 						</object>

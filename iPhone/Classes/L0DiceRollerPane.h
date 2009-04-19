@@ -19,6 +19,7 @@
 	IBOutlet UILabel* eachDieLabel;
 	
 	IBOutlet UIView* infoButtonHeaderView;
+	IBOutlet UIButton* infoButton;
 	
 	IBOutlet L0DraggableNavigationBar* bottomBar;
 	IBOutlet DiceshakerAppDelegate* controller; // TODO @property(assign)

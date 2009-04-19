@@ -53,6 +53,9 @@
 	bottomBar.touchAction = @selector(toggleDicePicker);
 	
 	historyTable.tableHeaderView = infoButtonHeaderView;
+	
+	infoButton.frame = infoButtonHeaderView.bounds;
+	infoButton.contentMode = UIViewContentModeCenter;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
