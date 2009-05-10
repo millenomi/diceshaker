@@ -1,116 +1,56 @@
+(function(global) {
 
-(function(){
+	if (!global.ILabs)
+		this.ILabs = {};
+	
+	if (!global.ILabs.Diceshaker)
+		global.ILabs.Diceshaker = {};
+		
+	function ILabs_Diceshaker_make(adapter) {
+		adapter.prepare();
+		
+		function ILabs_Diceshaker_rollDice(dice) {
+			var c = adapter.currentDice();
+			if (!c.equals(dice))
+				adapter.setCurrentDice(dice);
 
-	if (!window.ILabs)
-	    window.ILabs = {};
+			var roll = dice.rollEachDie();
+			adapter.setLastRoll(roll);
 
-	if (!ILabs.Diceshaker) {
-		ILabs.Diceshaker = {};
-		ILabs.Diceshaker.makeEventsWithModelAndView = function(model, view) {
-			return {
-				didStart: function() {
-					model.setCurrentDiceIfNone(new ILabs.Dice(3, 6));
-					view.displayCurrentDice(model.currentDice());
-					view.displayHistory(model.history());
-				},
-				didAskToRollCurrent: function() {
-					this.didAskToRoll(model.currentDice());
-				},
-				didAskToRoll: function(dice) {
-					model.setCurrentDice(dice);
-					var result = dice.rollEachDie();
-					view.displayRoll(ILabs.Dice.totalOf(result), result);
-
-					if (model.pushCurrentDiceToHistoryIfNeeded())
-						view.displayHistoryAfterPushing(model.currentDice(), model.history());
-					
-					view.displayCurrentDice(model.currentDice());
-				},
-				didChangeDiceSettings: function(numberOfDice, numberOfFacesPerDie) {
-					model.setCurrentDice(new ILabs.Dice(parseInt(numberOfDice), parseInt(numberOfFacesPerDie)));
-					view.displayCurrentDice(model.currentDice());
-				}
-			};
-		};
-		ILabs.Diceshaker.makeDefaultModel = function(x) {
-			var model = {
-				_history: null,
-				_currentDice: null,
-				currentDice: function() {
-					if (!this._currentDice)
-						this._currentDice = this.loadStoredDice();
-					
-					return this._currentDice;
-				},
-				setCurrentDice: function(x) {
-					this._currentDice = x;
-				},
-				setCurrentDiceIfNone: function(y) {
-					if (!this.currentDice())
-						this.setCurrentDice(y);
-				},
-				history: function() {
-					if (!this._history)
-						this._history = this.loadStoredHistory();
-						
-					return this._history;
-				},
-				pushCurrentDiceToHistoryIfNeeded: function() {
-					if (!this.currentDice()) return false;
-					
-                    if (!this._history)
-                        this._history = this.loadStoredHistory();
-                    
-					for (var i = 0; i < this._history.length; i++) {
-						if (this._history[i].equals(this.currentDice()))
-							return;
-					}
-					
-					this._history.push(this.currentDice());
-					this.storeHistory(this._history);
-					return true;
-				},
-				loadStoredDice: function() { return new ILabs.Dice(3, 6); },
-				storeHistory: function(h) {},
-				loadStoredHistory: function() { return [] }
-			};
-			
-			if (x) {
-				if (typeof x == 'function')
-					model = x(model);
-				else {
-					for (var i in x)
-						model[i] = x[i];
+			var history = adapter.history();
+			var found = false;
+			for (var i = 0; i < history.length; i++) {
+				if (history[i].equals(dice)) {
+					found = true; break;
 				}
 			}
-			
-			return model;
+
+			if (!found)
+				adapter.pushIntoHistory(dice);
+		}
+		
+		function ILabs_Diceshaker_rollCurrentDice() {
+			this.rollDice(adapter.currentDice());
+		}
+		
+		function ILabs_Diceshaker_setCurrentDiceNumber(amount) {
+			var dice = new ILabs.Dice(amount, adapter.currentDice().numberOfFacesPerDie());
+			adapter.setCurrentDice(dice);
+		}
+		
+		function ILabs_Diceshaker_setCurrentDiceNumberOfSides(sides) {
+			var dice = new ILabs.Dice(adapter.currentDice().numberOfDice(), sides);
+			adapter.setCurrentDice(dice);			
+		}
+		
+		return {
+			rollDice: ILabs_Diceshaker_rollDice,
+			rollCurrentDice: ILabs_Diceshaker_rollCurrentDice,
+			setCurrentDiceNumber: ILabs_Diceshaker_setCurrentDiceNumber,
+			setCurrentDiceNumberOfSides: ILabs_Diceshaker_setCurrentDiceNumberOfSides,
 		};
 	}
 	
-	/*
-		{
-			view: {
-				displayCurrentDice: function(dice) {},
-				displayHistory: function(arrayOfDice) {},
-				displayRoll: function(total, arrayOfDieResults) {},
-				displayHistoryAfterPushing: function(newDice) {},
-			},
-		
-			model: {
-				history: function() {},
-				currentDice: function() {},
-				setCurrentDice: function(newDice) {},
-				setCurrentDiceIfNone: function(newDiceIfNone) {},
-				pushCurrentDiceToHistoryIfNeeded: function() {},
-			},
-			
-			defaultModel: {
-				loadStoredDice: function() {},
-				storeHistory: function(h) {},
-				loadStoredHistory: function() {}
-			}
-		}
-	*/
-
-})();
+	global.ILabs.Diceshaker.make = ILabs_Diceshaker_make;
+	
+})(this);
